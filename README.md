@@ -1,9 +1,9 @@
 # RFSwitchChassisVisaDemo
 This repository houses example python scripts to show how to connect to the RFSwitchChassis through Visa. 
 # Commands
-There are 6 main commands that can be sent to the device. 
+There are 7 main commands that can be sent to the device. 
 
-Those commands can either be a query or an order. A query will end with a "?". A query tells the device to return a value to the user. The result of the Query will be returned with a prefix of "[RESULT]" on the GPIB interface. 
+Those commands can either be a query or an order. A query will end with a "?". A query tells the device to return a value to the user. The result of the Query will be returned with a prefix of "[RESULT]: " on the GPIB interface. 
 
 ## *IDN?
 ### Parameters
