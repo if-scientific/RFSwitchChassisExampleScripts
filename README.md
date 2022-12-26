@@ -1,5 +1,12 @@
 # RFSwitchChassisVisaDemo
 This repository houses example python scripts to show how to connect to the RFSwitchChassis through Visa. 
+
+You will need to install python, pyvisa-py, as well as the needed visa libraries for your operating system. 
+
+The VISA instrument address will be "TCPIP::**DEVICE_IP_ADDRESS**::9000::SOCKET."
+
+**Please make sure to indicate that the read and write termination characters are set to '\n'**
+
 # Commands
 There are 7 main commands that can be sent to the device. 
 
