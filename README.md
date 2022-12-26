@@ -65,25 +65,25 @@ The paramter here would be the value to set the field {Instrument Application}.
 If no parameter is passed, and this command is not a query. It won't do anything. 
 
 ### Description
-This command can be run as a query to get the value of the Instrumet Application field. If passed with a parameter for the field value, it will return the paramter. Otherwise, it will return the current value.
+This command can be run as a query to get the value of the **Instrument Application** field. If passed with a parameter for the field value, it will return the paramter. Otherwise, it will return the current value.
 
 
 ## INST:CONFigurationType/INST:CONFT
 ### Parameters
 This command can take 0 to 1 paramters.
 
-The paramter here would be the value to set the field {Configuration Type}.
+The paramter here would be the value to set the field **Configuration Type**.
 
 If no parameter is passed, and this command is not a query. It won't do anything. 
 
 ### Description
-This command can be run as a query to get the value of the Configuration Type field. If passed with a parameter for the field value, it will return the paramter. Otherwise, it will return the current value.
+This command can be run as a query to get the value of the **Configuration Type** field. If passed with a parameter for the field value, it will return the paramter. Otherwise, it will return the current value.
 
 Please note that you can add new lines to this field by adding "[NL]" in the parameter where a new line is needed.
 
 ## INST:IP
 ### Parameters
-This command can takes 0 paramters.
+This command takes 0 paramters.
 
 ### Description
 This command should only be run as a query. 
