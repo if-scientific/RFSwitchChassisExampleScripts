@@ -11,7 +11,7 @@ print("This is the device's identification string: ",a.query("*IDN?"))
 # Reset all the connections
 a.write("*RST")
 
-# Only switch on this bay if switch creation passes
+# Only switch on this bay if switch creation passes (Switch type:SPST -> only 4 switches possible)
 if a.query("INST:TYPEswitch? SPST, 2")=="True":
     # This switches switch 2 on bay 2.
     succeeded = a.query("INST:TURN? 2,2,1")
