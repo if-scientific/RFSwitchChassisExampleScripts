@@ -7,6 +7,8 @@ The VISA instrument address will be "TCPIP::**DEVICE_IP_ADDRESS**::9000::SOCKET.
 
 **Please make sure to indicate that the read and write termination characters are set to '\n'**
 
+Any changes done on the GPIB or VISA connection will be shown on the web page hosted at **DEVICE_IP_ADDRESS**:3000
+
 # Commands
 There are 7 main commands that can be sent to the device. 
 

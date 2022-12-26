@@ -4,11 +4,10 @@ import time
 
 # Get the resource and connect to it
 rm =pyvisa.ResourceManager()
-print(rm.list_resources())
 a = rm.open_resource("TCPIP::192.168.1.228::9000::SOCKET",write_termination= "\n", read_termination="\n")
 
 # Reset the device
-a.write("   *RST")
+a.write("*RST")
 
 # For each bay in the device
 for j in range(12):
@@ -16,10 +15,10 @@ for j in range(12):
     print(a.query("INST:TYPEswitch? SP6T, "+str(j)))
     for i in range(6):
         # For each switch in each bay, turn it on
-        a.write("INST:TURN? "+str(j)+","+str(i)+",1")
+        a.write("INST:TURN "+str(j)+","+str(i)+",1")
 
 # Sleep for 5 seconds
 time.sleep(5)
 
-# Reset 
+# Reset all the switches to off
 a.write("RES")
