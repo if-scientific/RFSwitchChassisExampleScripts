@@ -60,7 +60,7 @@ This command simply switches the individual switches to a specfic value.
 ### Parameters
 This command can take 0 to 1 paramters.
 
-The paramter here would be the value to set the field {Instrument Application}.
+The paramter here would be the value to set to the field **Instrument Application**.
 
 If no parameter is passed, and this command is not a query. It won't do anything. 
 
