@@ -33,8 +33,8 @@ This command takes two parameters. The first is a string indicating the type of 
 The second parameter is the bay number which should be a number between 1 and 12 (inclusive).
 
 #### Switch types
-**SP6T** This is the parameter for creating a single pole / 6 throws switch. \n
-**SPST** This is the parameter for creating a quad single pole / single throws switch. \n
+**SP6T** This is the parameter for creating a single pole / 6 throws switch. <br>
+**SPST** This is the parameter for creating a quad single pole / single throws switch.<br>
 **empty** This is the parameter for no switch.
 
 ### Description
