@@ -30,12 +30,12 @@ This command can be used to reset any errors indicated by the error led on the f
 ### Parameters
 This command takes two parameters. The first is a string indicating the type of switch to create. There are three options possible.
 
-#### Switch types
-**SP6T** This is the parameter for creating a single pole / 6 throws switch. 
-**SPST** This is the parameter for creating a quad single pole / single throws switch. 
-**empty** This is the parameter for no switch.
-
 The second parameter is the bay number which should be a number between 1 and 12 (inclusive).
+
+#### Switch types
+**SP6T** This is the parameter for creating a single pole / 6 throws switch. \n
+**SPST** This is the parameter for creating a quad single pole / single throws switch. \n
+**empty** This is the parameter for no switch.
 
 ### Description
 This command can be run as a query to get the status of the command. It will return True if it passes, and False if it fails.
