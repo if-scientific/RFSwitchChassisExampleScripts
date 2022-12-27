@@ -3,7 +3,7 @@ import time
 
 # Get the resource and connect to it
 rm =pyvisa.ResourceManager()
-a = rm.open_resource("TCPIP::192.168.1.228::9000::SOCKET",write_termination= "\n", read_termination="\n")
+a = rm.open_resource("TCPIP::192.168.1.233::9000::SOCKET",write_termination= "\n", read_termination="\n")
 
 # Reset all the connections
 a.write("*RST")
