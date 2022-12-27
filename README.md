@@ -2,11 +2,13 @@
 This repository houses example python scripts to show how to connect to the RFSwitchChassis through Visa. 
 
 You will need to install python, pyvisa-py, as well as the needed visa libraries for your operating system. 
-
+<br>
 The VISA instrument address will be "TCPIP::**DEVICE_IP_ADDRESS**::9000::SOCKET."
+<br>
 The GPIB instrument address will be "GPIB0::**DEVICE_GPIB_ADDRESS**::INSTR"
 <br>
 To change any of the above configurations go to **DEVICE_IP_ADDRESS**:3000\config.
+<br>
 **Please make sure to indicate that the read and write termination characters are set to '\n'**
 
 Any changes done on the GPIB or VISA connection will be shown on the web page hosted at **DEVICE_IP_ADDRESS**:3000
