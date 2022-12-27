@@ -10,10 +10,10 @@ a = rm.open_resource("TCPIP::192.168.1.228::9000::SOCKET",write_termination= "\n
 a.write("*RST")
 
 # For each bay in the device
-for j in range(12):
+for j in range(1,13):
     # Set it to a SP6T switch and return the result of the command
     print(a.query("INST:TYPEswitch? SP6T, "+str(j)))
-    for i in range(6):
+    for i in range(1,7):
         # For each switch in each bay, turn it on
         a.write("INST:TURN "+str(j)+","+str(i)+",1")
 
