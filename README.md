@@ -13,7 +13,7 @@ To change any of the above configurations go to **DEVICE_IP_ADDRESS**:3000\confi
 
 Any changes done on the GPIB or VISA connection will be shown on the web page hosted at **DEVICE_IP_ADDRESS**:3000
 
-**Please note that the given GPIB example works only using a gpib to usb serial bus convertor.**
+**We found some issues using the GPIB commands, so even though it works, we advice for the usage of the VISA connection flow.**
 # Commands
 There are 7 main commands that can be sent to the device. 
 
