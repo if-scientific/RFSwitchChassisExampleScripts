@@ -37,3 +37,5 @@ time.sleep(1)
 a.query("INST:RESETSW? 1")
 time.sleep(1)
 
+# Reset all the connections
+a.write("*RST")
