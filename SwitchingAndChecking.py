@@ -3,7 +3,7 @@ import time
 
 # Get the resource and connect to it
 rm =pyvisa.ResourceManager()
-a = rm.open_resource("TCPIP::192.168.1.233::9000::SOCKET",write_termination= "\n", read_termination="\n")
+a = rm.open_resource("TCPIP::192.168.1.228::9000::SOCKET",write_termination= "\n", read_termination="\n")
 
 # Print the ID of the device
 print("This is the device's identification string: ",a.query("*IDN?"))
@@ -11,8 +11,8 @@ print("This is the device's identification string: ",a.query("*IDN?"))
 # Reset all the connections
 a.write("*RST")
 
-# Only switch on this bay if switch creation passes (Switch type:SPST -> only 4 switches possible)
-if a.query("INST:TYPEswitch? SPST, 2")=="True":
+# Only switch on this bay if switch creation passes (Switch type:SPDT -> only 4 switches possible)
+if a.query("INST:TYPEswitch? SPDT, 2")=="True":
     # This switches switch 2 on bay 2.
     succeeded = a.query("INST:TURN? 2,2,1")
     print("Switching [bay:2,switch:2,1] succeeded: "+ succeeded)
