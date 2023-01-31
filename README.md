@@ -40,6 +40,35 @@ This command can be run as a query to get the status of the command. It will ret
 
 This command can be used to reset any errors indicated by the error led on the front panel. It can also be used as a singular command to disconnect all the switches. (It does both)
 
+
+## INST:RESETSWitch/INST:RESETSW
+### Parameters
+Can take either one or zero parameters.
+
+The only parameter to pass is the bay number. If no bay number is specfied, the device will reset all the bays/switches.
+
+### Description
+This command is used to reset the switches without deleting the configuration.
+
+## INST:SWitchON/INST:SWON
+### Parameters
+This command takes multiple parameters. Each parameter specfies the bay number and the switch number. 
+
+The format is the following: BAYNUMBER!SWITCHNUMBER
+
+### Description
+This command can be used to activate multiple switches on in a single command.
+
+
+## INST:SWitchOFF/INST:SWOFF
+### Parameters
+This command takes multiple parameters. Each parameter specfies the bay number and the switch number. 
+
+The format is the following: BAYNUMBER!SWITCHNUMBER
+
+### Description
+This command can be used to de-activate multiple switches on in a single command.
+
 ## INST:TYPEswitch/INST:TYPE
 ### Parameters
 This command takes two parameters. The first is a string indicating the type of switch to create. There are three options possible.
@@ -97,9 +126,11 @@ Please note that you can add new lines to this field by adding "[NL]" in the par
 
 ## INST:IP
 ### Parameters
-This command takes 0 paramters.
+This command can take 1 parameter. This parameter is th ip address to switch the device into.
 
 ### Description
-This command should only be run as a query. 
+This command is used to check or change the ip address exclusively. 
 
-This command will return the current static ip address set to the machine.
+If ran as a query, the command will return the current IP address of the machine. 
+
+If not, the device will set its ip address to the parameter given if possible. If the ip address change was successful, the machine will restart. 
