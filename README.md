@@ -15,7 +15,7 @@ Any changes done on the GPIB or VISA connection will be shown on the web page ho
 
 **We found some issues using the GPIB commands, so even though it works, we advice for the usage of the VISA connection flow.**
 # Commands
-There are 7 main commands that can be sent to the device. 
+There are 10 main commands that can be sent to the device. 
 
 Those commands can either be a query or an order. A query will end with a "?". A query tells the device to return a value to the user. The result of the Query will be returned with a prefix of "[RESULT]: " on the GPIB interface. 
 
