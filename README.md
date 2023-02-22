@@ -45,14 +45,14 @@ This command can be used to reset any errors indicated by the error led on the f
 ### Parameters
 Can take either one or zero parameters.
 
-The only parameter to pass is the bay number. If no bay number is specfied, the device will reset all the bays/switches.
+The only parameter to pass is the bay number. If no bay number is specified, the device will reset all the bays/switches.
 
 ### Description
 This command is used to reset the switches without deleting the configuration.
 
 ## INST:SWitchON/INST:SWON
 ### Parameters
-This command takes multiple parameters. Each parameter specfies the bay number and the switch number. 
+This command takes multiple parameters. Each parameter specifies the bay number and the switch number. 
 
 The format is the following: BAYNUMBER!SWITCHNUMBER
 
@@ -62,7 +62,7 @@ This command can be used to activate multiple switches on in a single command.
 
 ## INST:SWitchOFF/INST:SWOFF
 ### Parameters
-This command takes multiple parameters. Each parameter specfies the bay number and the switch number. 
+This command takes multiple parameters. Each parameter specifies the bay number and the switch number. 
 
 The format is the following: BAYNUMBER!SWITCHNUMBER
 
